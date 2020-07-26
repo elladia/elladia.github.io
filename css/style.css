@@ -236,3 +236,7 @@ body{
 .row{
     padding: 0rem 2rem 3rem;
 }
+
+.card {
+    border: none;
+}
