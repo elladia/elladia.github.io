@@ -114,12 +114,12 @@ li{
 
 
  a:hover{
-    color: #7ACCCC;
+    color: #FF7170;
      text-decoration-line: none;
 }
 
 a{
-    color: #FAC97A;
+    color: #5D4862;
 }
 
 
@@ -165,7 +165,7 @@ body{
 
 .btn{
     color: white;
-    background-color: #FAC97A;
+    background-color: #5D4862;
     display: inline-block; 
     font-weight: 200%;
 /*    border-color: black;*/
@@ -173,7 +173,7 @@ body{
 }
 
 .btn:hover{
-    background-color: #7ACCCC;
+    background-color: #FF7170;
     color: white;
 }
 
@@ -239,4 +239,18 @@ body{
 
 .card {
     border: none;
+}
+
+.article-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.article-img .col-lg-3 {
+    padding: 10px;
+}
+
+.path_number{
+    font-size: 60px;
+    font-weight: 400;
 }
