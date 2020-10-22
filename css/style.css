@@ -5,6 +5,12 @@ html{
     font-size: 15px;
 }
 
+.diffFont{
+    font-family: 'Kurale', serif;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+}
+
 body{
     overflow-x:hidden;
 }

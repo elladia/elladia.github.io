@@ -36,12 +36,17 @@ var visitor = (function() {
     visitor();
 });
 
+    
+    var birthDate = input.day.options[input.day.selectedIndex].value;
+    var birthMonth = input.month.options[input.month.selectedIndex].value;
+    var birthYear = input.year.options[input.year.selectedIndex].value;
+
 
 
 document.querySelector(".calc_num").addEventListener("click", function() {
     
-    console.log(visitor());
-    document.querySelector(".life_path_number").innerHTML = "Life Path ";
+    console.log(birthDate);
+    document.querySelector(".life_path_number").innerHTML = "Life Path " + birthDate;
 });
 
 
