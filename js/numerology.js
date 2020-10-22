@@ -45,24 +45,28 @@ document.querySelector(".calc_num").addEventListener("click", function() {
 });
 
 
-var calculateA = function(){
-    var c = visitor.slice(0,1);
-    var d = visitor.slice(1,2);
+function calculatorOne(day, month, year){
     
-    var a = parseInt(input.month.slice(0,1));
-    var b = parseInt(input.month.slice(1,2));
+    var c = parseInt(day.slice(0,1));
+    var d = parseInt(day.slice(1,2));
+    
+    var a = parseInt(month.slice(0,1));
+    var b = parseInt(month.slice(1,2));
 
-    var p = parseInt(input.year.slice(0,1));
-    var f = parseInt(input.year.slice(1,2));
-    var g = parseInt(input.year.slice(2,3));
-    var h = parseInt(input.year.slice(3,4));
+    var p = parseInt(year.slice(0,1));
+    var f = parseInt(year.slice(1,2));
+    var g = parseInt(year.slice(2,3));
+    var h = parseInt(year.slice(3,4));
     
     var addMonth = a + b;
     var addDate = c + d;
     var addYear = p + f + g + h;
 
-//    return {
-//       addNumbers function() = addMonth + addDate + addYear;
-//    }
-}; 
+    var addPath = addMonth + addDate + addYear;
+    
+    return addPath
+};
+
+
+
 
