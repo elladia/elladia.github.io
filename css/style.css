@@ -305,6 +305,7 @@ body{
 
 .blue{
     background-color: #BCD19A;
+    background: radial-gradient(#e66465, #9198e5);
     color: white; 
 }
 
@@ -350,13 +351,13 @@ body{
 }
 
 .slideUp{
-    animation: ease slide-top 0.7s both;
+    animation: slide-top 4.7s infinite;
 }
 
 
 .slide-top {
-	-webkit-animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-	        animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	-webkit-animation: slide-top 4.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-top 4.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 
@@ -365,9 +366,13 @@ body{
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes slide-top {
@@ -375,8 +380,12 @@ body{
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
