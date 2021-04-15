@@ -64,57 +64,34 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navbarResponsive">
+<body class="blue" data-spy="scroll" data-target="#navbarResponsive">
 
 
 
 <!--  NAVIGATION BAR STARTS HERE-->
+<!--
 <div class="navbar transparent navbar-inverse navbar-fixed-top">
-<nav class="navbar navbar-expand-lg fixed-top navbar-inner navbar-static-top">
+<nav class="navbar fixed-top navbar-inner navbar-static-top">
   
   <a class="navbar-brand logo" href="index.html"><img src="img/NEW%20LOGO.png" alt="Elladia" class="navbar-brand"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-<!--
-     <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
--->
-<!--
-      <li class="nav-item">
-        <a class="nav-link" href="work.html">Work</a>
-      </li>
--->
-      <li class="nav-item">
-         <a class="nav-link" href="#team">Team</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:support@elladiastudio.com">Contact</a>
-      </li>
-<!--
-      <li class="nav-item ">
-          <a href="https://www.instagram.com/elladiastudio/"><i class="fab fa-instagram insta"></i></a>
-      </li>
--->
-<!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Otherworlds
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/otherworlds/numerology.html">Numerology</a>
-        </div>
-      </li>
--->
-    </ul>
+
   </div>
 </nav> 
 </div>     
-      
+-->
+        <ul class="menu diffFont">
+             <li><a href="index.html">Home</a></li>
+             <li class="active"><a href="#team">Team</a></li>
+<!--
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Portfolio</a></li>
+-->
+             <li><a href="mailto:support@elladiastudio.com">Contact</a></li>
+         </ul>  
+
 <!--   NAVIGATION BAR ENDS HERE-->
   
 
@@ -124,7 +101,7 @@
 
 <!--<section>-->
 
-<div id="home" class="offset blue">
+<div id="home" class="offset ">
     <br><br><br><br><br><br>
     <br><br><br>
 
@@ -143,7 +120,7 @@
 <!--TEAM STARTS HERE-->
     <div id="team" class="diffFont">
      <div class="row col-lg-13 ">
-      <h1 class="">Meet the Team</h1> 
+      <h1 class="sectionTitle">Meet the Team</h1>
        <div class="col-12 ">
        </div>
     <div class="col-md-6 ">
@@ -180,10 +157,9 @@
        </div>
             
     <div class="row">
-          <div class="col-md-6 os-animation" data-animation="fadeInUp" >
-           <div id="team-slider" class="">
-<!--    delete above and replace with this <div id="team-slider" class="owl-carousel owl-theme">-->
-            <img src="img/Elizabeth%20Bio%20Pic%20cop2.jpg" alt="Elizabeth" class="img-responsive card-img-top">
+          <div class="col-md-6" >
+           <div class="">
+            <img  src="img/Elizabeth%20Bio%20Pic%20cop2.jpg" alt="Elizabeth" class="img-responsive card-img-top">
             <div class="card-body">
                <h3>Elizabeth</h3> 
                 <h5>Writer</h5>
@@ -206,19 +182,19 @@
 -->
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-caret-up"></i></button>
 
 
 <!--    FOOTER STARTS HERE-->
 
 <footer>
-<div class="row offset righty">
-<p>Elladia Studio 2021</p>
+<div class="row foot">
+<p>Elladia Studio Inc. 2021</p>
    </div>
    
 </footer>
 
-
+<script src="js/main.js"></script>
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
