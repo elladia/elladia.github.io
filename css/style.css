@@ -12,7 +12,7 @@ html{
 }
 
 .diffFont{
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Gruppo', cursive;
     text-rendering: optimizeLegibility;
 }
 
@@ -103,7 +103,82 @@ li{
    list-style: none;
 }
 
+.imageGrid{
+    display: flex;
+  flex-wrap: wrap;
+    /*  padding: 0 4px;*/
+}
 
+.column {
+  flex: 50%;
+  max-width: 50%;
+    height: auto;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .imageGrid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .column{
+        flex: 1;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    
+    .column img{
+        
+        height: auto;
+    }
+}
+
+/*OVERLAY*/
+
+.overlayCon {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FF7170;
+}
+
+.overlayCon:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+    text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 /*
 .video{
@@ -195,6 +270,11 @@ body{
     color: white;
 }
 
+.offerings img{
+    height: 300px;
+    width: auto;
+}
+
 /*COLORS*/
 .black{
     background-color: black;
@@ -212,7 +292,7 @@ body{
 }
 
 .blue{
-    background-color: #7ACCCC;
+    background-color: #BCD19A;
     color: white; 
 }
 
@@ -265,43 +345,9 @@ body{
     font-size: 60px;
     font-weight: 400;
 }
-
-/*OVERLAY*/
-
-.overlayCon {
-  position: relative;
-/*  width: 50%;*/
+. insta{
+    width: 1rem;
+    height: 1rem;
 }
 
-.overlayCon img{
-    width: 100vw;
-}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #FF7170;
-}
-
-.overlayCon:hover .overlay {
-  opacity: .8;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
