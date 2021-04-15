@@ -22,13 +22,22 @@ body{
 
 h1{
     margin: 0;
-    font-size: 300;  
+    font-size: 400;  
 }
 
 
 h5{
     text-rendering: geometricPrecision;
     text-transform: uppercase;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    font-size: 20px;
 }
 
 .sectionTitle{
