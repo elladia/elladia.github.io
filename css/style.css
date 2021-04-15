@@ -217,6 +217,8 @@ body{
 
 .introTing{
     display: flex;
+    text-align: center; 
+    justify-content: center;"
 }
 
 .one{
@@ -255,12 +257,6 @@ body{
 
 
 
-.lefty{
-    align-items: flex-start; 
- 
-}
-
-
 .btn{
     color: white;
     background-color: #5D4862;
@@ -275,16 +271,21 @@ body{
     color: white;
 }
 
+/*
 .form-control{
     background: white;
     border-bottom: 1px solid black;
     border: none;
     color: white;
 }
+*/
 
 .offerings img{
     height: 300px;
     width: auto;
+}
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
 }
 
 /*COLORS*/
@@ -307,6 +308,7 @@ body{
     background-color: #BCD19A;
     background: radial-gradient(#e66465, #9198e5);
     color: white; 
+    align-content: center;
 }
 
 
@@ -341,10 +343,6 @@ body{
     padding: 10px;
 }
 
-.path_number{
-    font-size: 60px;
-    font-weight: 400;
-}
 . insta{
     width: 1rem;
     height: 1rem;
